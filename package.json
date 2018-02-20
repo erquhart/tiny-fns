@@ -1,17 +1,20 @@
 {
   "name": "tiny-fns",
   "version": "1.0.0",
-  "description": "A microscopic library of negligibly performant helper functions that nobody needs.",
+  "description": "A microscopic zero-dep library of immutable helper functions that probably didn't need to be written.",
   "keywords": "util",
   "author": "Shawn Erquhart <shawn@erquh.art>",
   "repository": "https://github.com/erquhart/tiny-fns",
+  "main": "tiny-fns.js",
   "scripts": {
-    "build": "node generate-docs"
+    "generate-docs": "node generate-docs"
   },
-  "main": "index.js",
   "devDependencies": {
     "comment-parser": "^0.5.0",
     "fs-extra": "^5.0.0"
   },
+  "files": [
+    "tiny-fns.js"
+  ],
   "license": "MIT"
 }

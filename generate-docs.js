@@ -2,9 +2,10 @@ const path = require('path')
 const fs = require('fs-extra')
 const parseComments = require('comment-parser')
 
-const GITHUB_SOURCE_URL = 'https://github.com/erquhart/tiny-fns/blob/master/index.js'
-const RUNKIT_BASE_URL = 'https://runkit.com/erquhart'
 const README_FILENAME = 'README.md'
+const SOURCE_FILENAME = 'tiny-fns.js'
+const GITHUB_SOURCE_URL = `https://github.com/erquhart/tiny-fns/blob/master/${SOURCE_FILENAME}`
+const RUNKIT_BASE_URL = 'https://runkit.com/erquhart'
 const DOCS_HEADER = '## docs'
 
 function readFile(relativePath) {
@@ -42,7 +43,7 @@ ${exampleInput}
 }
 
 async function createDocsMarkdown() {
-  const readme = await readFile('index.js')
+  const readme = await readFile(SOURCE_FILENAME)
   const lastLineNumber = readme.split('\n').length - 1
   const comments = parseComments(readme)
   comments.forEach((comment, idx, allComments) => {
