@@ -7,6 +7,7 @@
   "repository": "https://github.com/erquhart/tiny-fns",
   "main": "tiny-fns.js",
   "scripts": {
+    "prepublishOnly": "npm run generate-docs",
     "generate-docs": "node generate-docs"
   },
   "devDependencies": {
