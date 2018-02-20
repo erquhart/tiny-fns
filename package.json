@@ -1,6 +1,6 @@
 {
   "name": "tiny-fns",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A microscopic zero-dep library of immutable helper functions that probably didn't need to be written.",
   "keywords": "util",
   "author": "Shawn Erquhart <shawn@erquh.art>",
