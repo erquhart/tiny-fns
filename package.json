@@ -1,0 +1,17 @@
+{
+  "name": "tiny-fns",
+  "version": "1.0.0",
+  "description": "A microscopic library of negligibly performant helper functions that nobody needs.",
+  "keywords": "util",
+  "author": "Shawn Erquhart <shawn@erquh.art>",
+  "repository": "https://github.com/erquhart/tiny-fns",
+  "scripts": {
+    "build": "node generate-docs"
+  },
+  "main": "index.js",
+  "devDependencies": {
+    "comment-parser": "^0.5.0",
+    "fs-extra": "^5.0.0"
+  },
+  "license": "MIT"
+}
