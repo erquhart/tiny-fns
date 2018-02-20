@@ -24,7 +24,7 @@ function createGitHubSourceUrl(line, lineEnd) {
 }
 
 function createRunkitUrl(name) {
-  return `${RUNKIT_BASE_URL}/tiny-fns-${name}`
+  return `${RUNKIT_BASE_URL}/tiny-fns-${name.toLowerCase()}`
 }
 
 function createFunctionDoc(line, lineEnd, { name, description, exampleInput, exampleOutput }) {
