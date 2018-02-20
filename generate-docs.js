@@ -31,7 +31,8 @@ function createFunctionDoc(line, lineEnd, { name, description, exampleInput, exa
   const gitHubSourceUrl = createGitHubSourceUrl(line, lineEnd)
   const runkitUrl = createRunkitUrl(name)
   return `
-[**\`${name}\`**](${gitHubSourceUrl}) ([try it](${runkitUrl})
+#### [**\`${name}\`**](${gitHubSourceUrl}) ([try it](${runkitUrl}))
+
 ${description}
 
 \`\`\`js
